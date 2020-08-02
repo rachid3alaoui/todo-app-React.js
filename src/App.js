@@ -5,11 +5,7 @@ import AddTodos from './AddTodos';
 
 class App extends Component {
   state = {
-    todos: [
-      { id: 1, content: 'Buy some milk' },
-      { id: 2, content: 'Do homework' },
-      { id: 3, content: 'Clean house' },
-    ],
+    todos: [],
   };
   deleteTodo = (e) => {
     const todoID = Number(e.target.getAttribute('todo_id'));
